@@ -1,13 +1,21 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@layer base {
+  @font-face {
+    font-family: Ubuntu-Bold;
+    font-weight: 700;
+    src: url(/src/fonts/Ubuntu-Bold.ttf) format("tff");
+  }
+  @font-face {
+    font-family: Ubuntu-Regular;
+    font-weight: 400;
+    src: url(/src/fonts/Ubuntu-Regular.ttf) format("tff");
+  }
+  @font-face {
+    font-family: Ubuntu-Meduium;
+    font-weight: 500;
+    src: url(/src/fonts/Ubuntu-Medium.ttf) format("tff");
+  }
 }
